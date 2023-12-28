@@ -1,5 +1,4 @@
 # projects
-- [akashisgreat.github.io/](akashisgreat.github.io/)
 - [electronic/](electronic/)
 - [home/](home/)
 - [location/](location/)
