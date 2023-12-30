@@ -6,3 +6,4 @@
 - [news/](news/)
 - [pay/](pay/)
 - [radio/](radio/)
+- [upload/](upload/)
