@@ -1,10 +1,20 @@
-# projects
+# Projects
 - [electronic/](electronic/)
-- [home/](home/)
 - [location/](location/)
 - [market/](market/)
 - [news/](news/)
+- [notes/](notes/)
 - [pay/](pay/)
 - [radio/](radio/)
 - [upload/](upload/)
-- [notes/](notes/)
+
+# What i learnt.
+- [] Markdown
+- [x] tmux
+- [] C
+- [] Python
+- [] Typing 
+- [] FreeCAD
+- [] LibreCAD
+- [] Gimp
+- [] Civil Engg
