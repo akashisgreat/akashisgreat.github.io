@@ -8,13 +8,3 @@
 - [radio/](radio/)
 - [upload/](upload/)
 
-# What i learnt.
-- [] Markdown
-- [x] tmux
-- [] C
-- [] Python
-- [] Typing 
-- [] FreeCAD
-- [] LibreCAD
-- [] Gimp
-- [] Civil Engg
