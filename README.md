@@ -7,4 +7,5 @@
 - [pay/](pay/)
 - [radio/](radio/)
 - [upload/](upload/)
+- [tv/](tv/)
 
