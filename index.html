@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash's Page</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        header .logo {
+            margin: .3em;
+            font-size: 1.4em;
+        }
+
+        /* Side Panel */
+        nav {
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            height: 100%;
+            width: 230px;
+            position: fixed;
+            top: 0;
+            right: -230px;
+            background-color: #333;
+            transition: 0.5s;
+            z-index: 1000;
+            padding-top: 70px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            transition: all 0.3s ease;
+            padding: 20px 5px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            border-bottom: 2px solid #565454;
+            border-collapse: collapse;
+        }
+
+        nav a:first-child {
+            border-top: 2px solid #565454;
+
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        #navbtn {
+            font-size: 30px;
+            background-color: #333;
+            color: white;
+            border: none;
+            z-index: 1001;
+            padding: 5px;
+        }
+
+        #navbtn_input {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #navbtn:hover {
+            background-color: #555;
+        }
+
+        #navbtn_input:checked~nav {
+            right: 0;
+        }
+
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .content ol {
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+
+        .content li a {
+            display: inline-block;
+            background-color: #e8e8e8;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 7px 0px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Akash's page ☁️</h2>
+        <label id="navbtn" for="navbtn_input">&#9776;</label>
+        <input id="navbtn_input" type="checkbox">
+        <nav>
+            <a href="/">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="pay/">Pay</a>
+            <a href="notes/">Notes</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content" id="about">
+            <h2>About Me</h2>
+            <p>I am a human 🙂. who feels good to grazing the any type of technology.</p>
+        </div>
+        <div class="content" id="projects">
+            <h2>Projects</h2>
+            <p>These are some of my projects.</p>
+            <ol>
+                <li><a href="notes/">Notes</a> 📝</li>
+                <li><a href="location/">Location</a> 🌍️</li>
+                <li><a href="upload/">Upload</a> 🗃️</li>
+                <li><a href="pay/">Pay ₹ </a> 💰️</li>
+                <li><a href="market/">Market</a> 📈</li>
+                <li><a href="radio/">Radio</a> 📻</li>
+                <li><a href="tv/">TV</a> 📺</li>
+            </ol>
+        </div>
+
+        <div class="content" id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>✉️ Email: <a href="mailto:akashisgreat0000@gmail.com">akashisgreat0000@gmail.com</a></li>
+                <li>🫂 Instagram: <a href="https://instagram.com/akashisgreat">@akashisgreat</a> (is it a contact
+                    medium? ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯)</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 akashisgreat.github.io
+    </footer>
+</body>
+
+<script>
+    const main = document.querySelector('main');
+
+    main.addEventListener('click', () => {
+        console.log('clicked');
+        navbtn_input.checked = false
+    });
+
+
+
+</script>
+
+</html>
+
