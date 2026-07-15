@@ -153,6 +153,7 @@
         <div class="content" id="about">
             <h2>About Me</h2>
             <p>I am a human 🙂. who feels good to grazing the any type of technology.</p>
+            <button id="age_btn">Show</button> <span id="age_field"></span>
         </div>
         <div class="content" id="projects">
             <h2>Projects</h2>
@@ -190,6 +191,47 @@
     });
 
 
+
+</script>
+
+<script>
+const dob = new Date("2004-09-08T14:20:00+05:30"); // Change this
+
+// Current date in IST
+const today = new Date(
+    new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+);
+
+let years = today.getFullYear() - dob.getFullYear();
+let months = today.getMonth() - dob.getMonth();
+let days = today.getDate() - dob.getDate();
+
+if (days < 0) {
+    months--;
+    days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+}
+
+if (months < 0) {
+    years--;
+    months += 12;
+}
+
+
+const age = {
+    year: years,
+    month: months,
+    day: days
+};
+
+age_btn.addEventListener('click', function(){
+    if (age.month == 0 && age.day == 0) {
+        age_field.innerHTML = `${age.year} years ${age.month} months ${age.day} days. <b> Happy Birthday Bro! 🎉🥳<b>`
+    }
+    else{
+        age_field.innerHTML = `${age.year} years ${age.month} months ${age.day} days.`
+    
+    }
+});
 
 </script>
 
